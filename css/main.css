@@ -36,7 +36,12 @@ body {
     background-size: 50px;
     color: #fafafa;
 }
-
+@media (max-width: 600px)  {
+    .content{
+        display: block;
+        text-align: center;
+    }
+}
 .hero {
     width: 500px;
     position: absolute;
