@@ -83,7 +83,17 @@ body {
 }
 
 .container {
-    padding: 0 7vw;
+    padding:0 7vw;
+}
+.button {
+    text-decoration: none;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    transition: color 1s linear;
+}
+.button:hover {
+    color: rgb(255, 221, 0);
 }
 
 .info {
@@ -159,7 +169,7 @@ body {
 }
 
 .nav-item {
-    transition: color 0.3s linear;
+    transition: color 0.5s linear;
     text-decoration: none;
     color: #fafafa;
     font-family: raleway-c;
@@ -175,9 +185,44 @@ body {
     max-width: calc(var(--index)*50);
     position: absolute;
     left: 950px;
+    margin-bottom: 40px;
 
 }
 
+.progress p {
+    margin-right: 100px;
+}
+
+.progress-bar {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 10px;
+    background-color: #e3dfdf;
+}
+
+.bar {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to right, #e87801, #ebcf00);
+    /* background-color: #ebcf00; */
+    
+}
+
+.progress,
+.progress-js,
+.progress-git,
+.progress-sql {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.skills-info {
+    padding-top: 40px;
+    margin-left: -35px;
+}
 ul {
     margin-left: 0;
 }
