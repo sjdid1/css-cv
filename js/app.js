@@ -20,14 +20,14 @@ gsap.fromTo('.hero-section', { opacity: 1 }, {
     }
  })
  
- let itemsL = gsap.utils.toArray('.info__left .infoL')
+ let itemsL = gsap.utils.toArray('.info__left .info-animate')
 
 itemsL.forEach( item => {
     gsap.fromTo(item, { x: -50, opacity: 0 }, { 
         opacity: 1, x: 0,
         scrollTrigger: {
             trigger: item,
-            start: '-850',
+            start: '-850',  
             end: '-100',
             scrub: true
         }
@@ -35,7 +35,7 @@ itemsL.forEach( item => {
 
 })
 
-let itemsR = gsap.utils.toArray('.info__right .infoL')
+let itemsR = gsap.utils.toArray('.info__right .info-animate')
 
 itemsR.forEach( item => {
     gsap.fromTo(item, { x: 50, opacity: 0 }, { 
