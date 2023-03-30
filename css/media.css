@@ -9,7 +9,7 @@
 
     .main-title {
         top: 60vh;
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .progress,
     .progress-js,
@@ -55,6 +55,10 @@
         max-width: 150px;
     }
 
+    .container {
+        padding-left: 0;
+    }
+
     .main-title {
         font-size: 3rem;
         top: 60vh;
@@ -70,8 +74,44 @@
     .info > *   {
         flex-direction: column;
     }
-    
+
+    .text-block {
+        
+        line-height: 1rem;
+        margin-bottom: 1;
+    }
+
+    .text-block__p {
+        font-size: 8px;
+    }
+    .text-block__h {
+        font-size: 10px;
+    }
+    .info__left {
+        max-width: 200px;
+    }
    
+    .progress-bar {
+       
+        width: 100px;
+        height: 6px;
+        
+    }
+    .nav-item {
+        font-size: 8px;
+    }
+
+    .info__item {
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+    }
+
+    .info__item_contacts {
+        margin-right: 20px;
+        width: 18px;
+        height: 18px;
+    }
 
     .progress,
     .progress-js,
