@@ -49,6 +49,27 @@ itemsR.forEach( item => {
       })
 
 })
+}
 
+function validate(){
+    
+    var y=document.forms["form"]["email"].value;
+    
+    if (y.length==0){
+        document.getElementById("emailf").innerHTML="*данное поле обязательно для заполнения";
+        return false;
+    }
 
+    at=y.indexOf("@");
+    if (at<1) {
+        document.getElementById("emailf").innerHTML="*email введен без @";
+        return false;
+    }
+
+    dot=y.indexOf(".");
+    if (dot <1){
+        document.getElementById("emailf").innerHTML="*после @ должна быть точка";
+        return false;
+    }  
+    else alert('Данные отправлены');
 }
